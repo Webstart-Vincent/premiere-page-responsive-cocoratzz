@@ -1,0 +1,50 @@
+body {
+    /* margin: 20px; */
+    background-color: #9379924d;
+    /* background-color: #9379924d; 4d = opacité */
+    /* plus de 6 caracteres = l'opacité  */
+    /* #000000 = #000 (noir) */
+    /* #ffffff = #fff (blanc) */
+    /* pour choisir la police */
+    color: purple;
+    font-family: "Nosifer", sans-serif;
+}
+
+h1 {
+    font-family: "Nosifer", sans-serif;
+}
+
+h2 {
+    font-family: "Nosifer", sans-serif;
+}
+
+p {
+    font-family: "PT Serif", serif;
+}
+
+li {
+    font-family: "PT Serif", serif;
+}
+
+/* pour mettre l'image dans un cercle */
+img {
+    /* border-radius  */
+    border-radius: 50%;
+    width: 150px;
+    /* de base c'est un inline-block, donc je le règle en bloc */
+    display: block;
+    /* pour centrer l'élément */
+    margin: auto;
+    /* bordeur-width: 10px;
+    border-color: red; 
+    /* border-style: solid; */
+    border: 10px wheat solid;
+}
+/* Pour les images des personnages */
+.toi {
+    border-radius: 25%;
+    width: 125px;
+    border: 10px wheat solid;
+    /* Pour que les images soit tout à gauche */
+    margin-left: 0;
+}
