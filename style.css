@@ -12,18 +12,22 @@ body {
 
 h1 {
     font-family: "Nosifer", sans-serif;
+    font-size: x-large;
 }
 
 h2 {
     font-family: "Nosifer", sans-serif;
+    font-size: large;
 }
 
 p {
     font-family: "PT Serif", serif;
+    font-size: medium;
 }
 
 li {
     font-family: "PT Serif", serif;
+    font-size: medium;
 }
 
 /* pour mettre l'image dans un cercle */
@@ -48,3 +52,30 @@ img {
     /* Pour que les images soit tout à gauche */
     margin-left: 0;
 }
+/* responsible : les choses sont fluides, et quand c'est trop grand on refait la mise en page */
+@media (min-width: 800px) {
+    img {
+        width: calc(100% * 3 / 7);
+    }
+    .wrapper {
+        display: grid;
+        /* repeat : permet de faire des choses automatiquement*/
+        grid-template-columns: 4fr 4fr;
+        /* background-color: #8872c5; */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main {
+        font-size: medium;
+    }
+}
+/* div {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+} */

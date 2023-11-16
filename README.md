@@ -1,3 +1,3 @@
 # premiere-page
 
-My first responsive page available on <https://app.netlify.com/teams/cocoratzz/overview>
+My first responsive page available on https://github.com/Webstart-Vincent/premiere-page-responsive-cocoratzz.git
