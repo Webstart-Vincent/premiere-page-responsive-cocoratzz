@@ -30,6 +30,11 @@ li {
     font-size: medium;
 }
 
+nav {
+    font-family: "PT Serif", serif;
+    font-size: medium;
+}
+
 /* pour mettre l'image dans un cercle */
 img {
     /* border-radius  */
@@ -42,15 +47,29 @@ img {
     /* bordeur-width: 10px;
     border-color: red; 
     /* border-style: solid; */
-    border: 10px wheat solid;
+    border: 5px wheat solid;
 }
 /* Pour les images des personnages */
 .toi {
     border-radius: 25%;
     width: 125px;
-    border: 10px wheat solid;
+    border: 5px wheat solid;
     /* Pour que les images soit tout à gauche */
     margin-left: 0;
+}
+nav {
+    background-color: #f5deb3;
+    position: fixed;
+    /* inset = top: 0; right: 0; bottom: 0; left: 0 */
+    inset: 0;
+    display: grid;
+    /* pour que les mots soient proches */
+    align-content: center;
+    /* pour mettre les mots au millieu */
+    justify-content: center;
+    gap: 20px;
+    /* pour bien centrer les deux mots */
+    text-align: center;
 }
 /* responsible : les choses sont fluides, et quand c'est trop grand on refait la mise en page */
 @media (min-width: 800px) {
@@ -60,13 +79,13 @@ img {
     .wrapper {
         display: grid;
         /* repeat : permet de faire des choses automatiquement*/
-        grid-template-columns: 4fr 4fr;
+        grid-template-columns: 3fr 4fr;
         /* background-color: #8872c5; */
     }
 }
 @media screen and (max-width: 1024px) {
     .wrapper {
-        margin (0, 61px);
+        margin: (0, 61px);
         /* width: 90%; */
     }
 }
